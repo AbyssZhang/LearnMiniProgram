@@ -1,1 +1,11 @@
-<!-- 1.小程序的数据绑定>
+<!-- 1.小程序的数据绑定 -->
+<view>hello {{name}}</view>
+<view>My age: {{age + 20}}</view>
+
+<!-- 2.列表展示: wx:for -->
+<view wx:for="{{movies}}">{{item.name}}-{{item.age}}</view>
+
+<!-- 3.时间监听 改变data -->
+<view>当前计数：{{counter}}</view>
+<button size='mini' bindtap='handleBtnClick'>+</button>
+<button size='mini' bindtap='handleSub'>-</button>
