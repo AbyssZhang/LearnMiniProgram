@@ -1,0 +1,8 @@
+/* pages/demo/demo.wxss */
+
+button{
+  background-color: gold;
+  width:300rpx;
+  border: 10rpx solid gray;
+  border-radius: 30rpx;
+}
