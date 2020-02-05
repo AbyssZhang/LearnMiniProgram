@@ -1,6 +1,11 @@
 // pages/home/home.js
+const app = getApp()
+console.log(app.globalData.name),
+console.log(app.globalData.age)
 Page({
-
+  handleGetUserInfo(event){
+    console.log(event)
+  },
   /**
    * 页面的初始数据
    */
