@@ -1,4 +1,6 @@
 /**app.wxss**/
+@import './style/btn.wxss';
+
 .container {
   height: 100%;
   display: flex;

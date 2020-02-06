@@ -1,0 +1,43 @@
+/* pages/wxss/wxss.wxss */
+@import './style/box.wxss';
+@import './style/content.wxss';
+
+
+.box{
+  color:blue;
+  font-size: 32px;
+}
+
+.container{
+  color:purple;
+  font-size: 32px;
+}
+
+.content1{
+    background:orange !important;
+  font-size: 32px;
+}
+.content{
+    background:orange ;
+  font-size: 32px;
+}
+
+/* .box1{
+  width:100px;
+  height:100px;
+  background:orange;
+}
+
+.box2{
+  width:200rpx;
+  height:200rpx;
+  background: purple;
+} */
+
+/* .content2{
+  font-size: 32px;
+}
+
+.content3{
+  font-size: 64rpx;
+} */

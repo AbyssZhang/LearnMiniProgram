@@ -1,0 +1,4 @@
+<template name="con_templete">
+  <button size="mini">{{btnText}}</button>
+  <view>{{content}}</view>
+</template>

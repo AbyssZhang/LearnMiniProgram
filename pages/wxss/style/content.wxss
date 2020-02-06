@@ -1,0 +1,7 @@
+.content2{
+  font-size: 32px;
+}
+
+.content3{
+  font-size: 64rpx;
+}
