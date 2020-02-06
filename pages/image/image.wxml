@@ -1,0 +1,37 @@
+<!-- 1.image基础-->
+<!-- 
+  重点：
+  1.image组件可以写成单标签，也可以写成双标签
+  2.image组件默认有自己的大小 320X240
+  3.image组件是一个行内块级元素（inline-block)  
+  
+-->
+
+<image/>
+<text>hahaha</text>
+
+<!-- 2.src:本地地址(相对路径/绝对路径)/远程地址 -->
+<image src='../../assets/cart.png'></image>
+<image src='/assets/cart.png'></image>
+
+<image src='https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1889585718,3374410770&fm=26&gp=0.jpg'></image>
+
+<!-- 补充：相册中的图片-->
+<button bindtap="handleChooseAlbum">选中图片</button>
+<image src="{{imagePath}}"></image>
+
+<!-- 3.bindload:监听图片加载完成 -->
+<!-- lazy-load:图片懒加载 -->
+<view>---------------------</view>
+<image wx:for="{{1}}"
+src='https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1889585718,3374410770&fm=26&gp=0.jpg'
+bindload="handleImageLoad"
+lazy-load></image>
+
+<!-- 4.show-menu-by-longpress:长按图片出现识别小程序码 -->
+<image src='https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1889585718,3374410770&fm=26&gp=0.jpg'
+show-menu-by-longpress></image>
+<!-- 5.mode -->
+
+
+

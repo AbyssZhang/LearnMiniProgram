@@ -1,1 +1,2 @@
-<!-- 1.小程序的数据绑定>
+<!-- 1.hidden属性 -->
+<view hidden>hahahah</view>

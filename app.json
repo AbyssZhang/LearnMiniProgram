@@ -1,8 +1,14 @@
  {
   "pages": [
-    "pages/demo/demo",
+    "pages/scroll/scroll",
+    "pages/input/input",
+    "pages/image/image",
+    "pages/view/view",
+    "pages/button/button",
+    "pages/text/text",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/demo/demo"
     
   ],
   "window": {
