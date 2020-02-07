@@ -1,1 +1,33 @@
-<!-- 1.小程序的数据绑定>
+<!-- 1.事件处理的回顾--->
+<button bindtap="handleBtnClick">按钮</button>
+<button bind:tap="handleBtnClick">按钮</button>
+<button catch:tap="handleBtnClick">按钮</button>
+
+<!-- 2.常见的一些事件 -->
+<view class="box" bind:touchstart="handleTouchStart" bind:touchmove="handleTouchMove" bind:touchend="handleTouchEnd" bind:tap="handleTap" bind:longpress="handleLongPress"></view>
+
+<!-- 3.事件对象的分析 -->
+<button id='btn' bindtap="handleEventClick" bindtouchend="handleEventEnd">事件对象</button>
+
+<view id='inner' class='outer' bindtap='handleOuter'>外层
+  <view id='outer' class='inner' bindtap="handleInner">内层</view>
+</view>
+
+<!-- 4.事件参数的传递 -->
+<view class='container'>
+  <block wx:for="{{titles}}" wx:key="{{index}}">
+    <view class='item' bindtap='handleItemClick' data-index="{{index}}" data-item="{{item}}">
+      {{item}}
+    </view>
+  </block>
+</view>
+
+<!-- 5.事件冒泡和事件捕获 -->
+<!-- bind:一层层传递 -->
+<!-- catch:阻止事件的进一步传递 -->
+<view class='view1' capture-bind:tap="handleCapView1" bind:tap="handleBindView1">
+  <view class='view2' capture-bind:tap="handleCapView2" bind:tap="handleBindView2">
+    <view class='view3' capture-bind:tap="handleCapView3" bind:tap="handleBindView3">
+    </view>
+  </view>
+</view>
