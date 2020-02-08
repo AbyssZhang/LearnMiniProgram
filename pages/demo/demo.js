@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    counter:0
   },
 
   /**
@@ -62,5 +62,34 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  handleIncrement(event){
+    console.log('----------',event)
+    this.setData({
+      counter:this.data.counter + 1
+    })
+  },
+  handleTabClick(event){
+    console.log(event)
+  },
+
+  handleIncrementCpn(){
+    // console.log('-------------')
+    // 最终目的：修改my-sel中的数据
+    // 1.获取组件对象
+    const my_sel = this.selectComponent('.sel-class')
+
+    // // 2.通过setData修改组建中的数据（不合理）
+    // my_sel.setData({
+    //   counter:my_sel.data.counter + 10
+    // })
+
+    my_sel.incrementCounter(10)
+  },
+  handleChangeShow(){
+    this.setData({
+      isShow:!this.data.isShow
+    })
   }
 })

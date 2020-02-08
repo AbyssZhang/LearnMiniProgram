@@ -6,3 +6,16 @@ button{
   border: 10rpx solid gray;
   border-radius: 30rpx;
 }
+.title{
+  color:red;
+}
+
+.red{
+  color:red;
+}
+.green{
+  color:green;
+}
+.blue{
+  color:blue;
+}
